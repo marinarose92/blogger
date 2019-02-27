@@ -14,7 +14,7 @@ font-size:15pt;
     background-color:#ffdde2;
     border-radius:10px;
     padding:50px;
-    box-shadow: 10px 10px rgb(104, 218, 51);
+    box-shadow: 10px 10px #b8e892;
 }
 h1 {
     font-family:Arial, Helvetica, sans-serif;
@@ -24,6 +24,11 @@ h1 {
 ul {
   list-style-type:none;
 }
+ul#articles li {
+    background-color:#b8e892;
+    padding:45px;
+    border-radius:5px;
+}
 #articles a {
     font-family:Arial, Helvetica, sans-serif;
     font-size:30pt;
@@ -32,7 +37,7 @@ ul {
     color:#3e05aa;
 }
 #articles a:hover {
-    background-color:rgb(104, 218, 51);
+    background-color:#b8e892;
 }
 a.new_article {
     font-family:Arial, Helvetica, sans-serif;
