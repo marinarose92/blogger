@@ -160,3 +160,20 @@ div#delete a {
     color:#AA0000;
     font-weight:bolder;
 }
+input[type="submit"] {
+    background-color: #059b92;
+    color:white;
+    display:block;
+    text-align:center;
+    font-weight:bold;
+}
+.home a {
+    color:#fb3cae;
+    text-decoration:none;
+    font-size:16px;
+    margin-right:20px;
+    margin-top:-150px;
+    margin-left:20px;
+    font-weight:bold;
+    position:absolute;
+}

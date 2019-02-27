@@ -11,13 +11,18 @@
 <body>
   <p class="flash">
     <%= flash.notice %>
-    <h1>The Code Witch<img style="vertical-align:middle" src="https://i.imgur.com/qKDoXCX.png" width="100px"></h1><h6 class="login">
+    <h1>The Code Witch<img style="vertical-align:middle" src="https://i.imgur.com/qKDoXCX.png" width="100px"></h1>
+    <h6 class="login">
         <% if logged_in? %>
           <%= link_to "(Log out)", logout_path %>
         <% else %>
           <%= link_to "(Log in / Register)", login_path %>
         <% end %>
       </h6>
+
+<h6 class="home">
+<%= link_to "Home", articles_path %>
+</h6>
 
   <div id="container">
     <div id="content">
