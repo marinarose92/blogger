@@ -173,7 +173,19 @@ input[type="submit"] {
     font-size:16px;
     margin-right:20px;
     margin-top:-150px;
-    margin-left:20px;
+    margin-left:20px
     font-weight:bold;
     position:absolute;
+}
+div#footer{
+    margin-top:25px;
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    color:#059b92;
+    font-weight:bolder;
+}
+div#footer a{
+    color:#fb3cae;
+    text-decoration:none;
 }
