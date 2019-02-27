@@ -1,10 +1,11 @@
 <h1>Posts Tagged with <%= @tag.name %></h1>
 
-<ul>
+<ul id="articles">
     <% @tag.articles.each do |article| %>
-        <li><%= link_to article.title, article_path(article) %></li>
+        <li id="title"><%= link_to article.title, article_path(article) %></li>
     <% end %>
-</ul>    <%= link_to 'Delete Tag', tag_path(@tag),
-                data: { confirm: 'Are you sure?' } %>
+</ul>  <div id="delete">  <%= link_to 'Delete Tag', tag_path(@tag),
+                method: :delete,
+                data: { confirm: 'Are you sure?' }%></div>
 
-<br /><%= link_to 'Back', articles_path %>
+<br /><div id="act"><%= link_to '<< Back', articles_path %></div>

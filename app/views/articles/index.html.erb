@@ -1,4 +1,4 @@
-<h3>All Posts</h3>
+<h3>Blog Posts</h3>
 <ul id="articles">
     <% @articles.each do |article| %>
         <li>
@@ -9,5 +9,5 @@
 </ul>
 <%= link_to "View Tags", tags_path, class:"tags" %>
 <% if logged_in? %>
-<%= link_to "Create a New Article", new_article_path, class:"new_article" %>
-<% end %>
+<div id="act"><%= link_to "+ Create a New Article", new_article_path, class:"new_article" %>
+</div><% end %>
