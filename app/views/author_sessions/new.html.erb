@@ -2,7 +2,7 @@
 
 <%= form_tag author_sessions_path, method: :post do %>
     <div class="field">
-        <% label_tag :email %>
+        <%= label_tag :email %>
         <%= text_field_tag :email %>
         <br />
     </div>
@@ -15,5 +15,7 @@
         <%= submit_tag "Login" %>
     </div>
 <% end %>
-
-<%= link_to 'Back', articles_path %>
+<div id="act">
+<%= link_to 'Register for an Account', new_author_path %>
+<br /><%= link_to 'Back', articles_path %>
+</div>

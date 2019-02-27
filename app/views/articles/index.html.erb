@@ -1,11 +1,13 @@
-<h1>All Articles</h1>
-
+<h3>All Posts</h3>
 <ul id="articles">
     <% @articles.each do |article| %>
         <li>
-            <%= link_to article.title, article_path(article) %>
+            <%= link_to article.title, article_path(article) %><br/>
+            Posted on <%= article.created_at.strftime("%B %d %Y")%>
         </li>
     <% end %>
 </ul>
-
+<%= link_to "View Tags", tags_path, class:"tags" %>
+<% if logged_in? %>
 <%= link_to "Create a New Article", new_article_path, class:"new_article" %>
+<% end %>
